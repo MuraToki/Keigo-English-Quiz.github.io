@@ -1,0 +1,271 @@
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+
+header {
+  background-color: navy;
+  color: white;
+  padding: 20px;
+  margin: 0
+}
+
+header h1,
+header p {
+  margin: 0;
+  padding: 0;
+}
+
+
+header h1 {
+  font-size: 45px;
+}
+
+.title > h1 {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 35px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bold;
+}
+
+
+.title > p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 25px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.title .pan {
+  background: linear-gradient(transparent 50%, red 0%);
+}
+
+.title .bread {
+  background: linear-gradient(transparent 50%, #fcee21 0%);
+}
+
+#pic img {
+  display: block;
+  margin: auto;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+
+@keyframes left{
+  0%{
+    transform: translateX(50);
+  }
+  100%{
+    transform: translateY(-35px);
+  }
+}
+
+
+.btn-circle-stitch {
+  display: inline-block;
+  text-decoration: none;
+  background: green;
+  color: #FFF;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0px 0px 0px 5px green;
+  border: dashed 1px #FFF;
+  transition: .4s;
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+  animation: left 2s .3s ease-out infinite alternate;
+}
+
+.btn-circle-stitch:hover {
+  background: rgb(1, 73, 1);
+  box-shadow: 0px 0px 0px 5px rgb(1, 75, 1);
+}
+
+@keyframes left{
+  0%{
+    transform: translateX(50);
+  }
+  100%{
+    transform: translateY(-35px);
+  }
+}
+
+.btn-circle-stitch2 {
+  display: inline-block;
+  text-decoration: none;
+  background: yellow;
+  color: black;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0px 0px 0px 5px yellow;
+  border: dashed 1px black;
+  transition: .4s;
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+  animation: left 2s .3s ease-out infinite alternate;
+}
+
+.btn-circle-stitch2:hover {
+  background: rgb(189, 140, 5);
+  box-shadow: 0px 0px 0px 5px rgb(189, 140, 5);
+}
+
+@keyframes left{
+  0%{
+    transform: translateX(50);
+  }
+  100%{
+    transform: translateY(-35px);
+  }
+}
+
+.btn-circle-stitch3 {
+  display: inline-block;
+  text-decoration: none;
+  background: red;
+  color: #FFF;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0px 0px 0px 5px red;
+  border: dashed 1px #FFF;
+  transition: .4s;
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+  animation: left 2s .3s ease-out infinite alternate;
+}
+
+.btn-circle-stitch3:hover {
+  background: rgb(126, 26, 26);
+  box-shadow: 0px 0px 0px 5px rgb(126, 26, 26);
+}
+
+section {
+  background-color: deepskyblue;
+  margin-top: 65px;
+  padding-bottom: 30px;
+}
+
+.feature > h1 {
+  font-size: 40px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.marker-border-1{
+  background:linear-gradient(transparent 65%, white 0%);
+}
+
+.info > h2 {
+  font-size: 30px;
+  font-family: cursive;
+}
+
+.info > h2 .marker {
+  background:linear-gradient(transparent 75%, orange 0%);
+}
+
+.pocket .info > p {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+.pocket {
+  text-align: center;
+  
+}
+
+.pocket .info {
+  margin-top: 20px;
+}
+
+.phot img {
+  border-radius: 15px;
+}
+
+.feature section {
+  padding-bottom: 70px;
+}
+
+
+
+
+@media (min-width: 900px) {
+  header .cont {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+ header .text {
+   width: 60%;
+   align-self: center;
+ }
+
+ .grako {
+   display: flex;
+   width: 800px;
+   margin: 0 auto;
+ }
+
+ .grako #button {
+   width: 800px;
+   align-self: center;
+ }
+
+
+
+
+ /* ここ大事 */
+ .feature section {
+  display: flex;
+  justify-content: space-between;
+}
+/* ここ大事 */
+.feature section:nth-child(even) {
+ flex-direction: row-reverse;
+}
+
+.feature .phot {
+  width: 50%;
+}
+
+.feature .info {
+  width: calc(50% - 32px);
+}
+
+
+}
+
+
+footer {
+  background-color: black;
+  color: lime;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+  padding: 70px 0;
+}
+
+footer > p {
+  margin-bottom: 0;
+}

@@ -1,0 +1,156 @@
+body {
+  background-color: blue;
+  font-size: 18px;
+  font-family: 'Times New Roman', serif;
+}
+
+.cont {
+  width: 415px;
+  height: 500px;
+  margin: 8px auto;
+  margin-top: 28px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 30px;
+  position: relative;
+}
+
+.ques {
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+#choices {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+#choices > li {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#choices > li:hover {
+  background: purple;
+}
+
+#choices > li.correct {
+  background: plum;
+  border-color: rgb(209, 114, 209);
+  color: white;
+  font-weight: bold;
+}
+
+#choices > li.correct::after {
+  content: '…〇';
+}
+
+#choices > li.wrong {
+  background: olivedrab;
+  border-color: olive;
+  color: white;
+  font-weight: bold;
+}
+
+#choices > li.wrong::after {
+  content: '…✖';
+}
+
+#btn {
+  background-color: skyblue;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 0 rgb(36, 163, 212);
+}
+
+#btn.disabled {
+  background-color: #ccc;
+  box-shadow: 0 4px 0 gray;
+  opacity: 0.7;
+}
+
+
+.cont > p {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+#result {
+  position: absolute;
+  width: 400px;
+  background-color: white;
+  padding: 35px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 5px;
+  text-align: center;
+  transition: 0.7s;
+}
+
+#result.hidden {
+  transform: translateX(-1000px);
+}
+
+#result > h2 {
+  font-size: 30px;
+}
+
+#result > p {
+  font-size: 20px;
+}
+
+#result > a {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 40px;
+}
+
+#result .more{
+  display: inline-block;
+  padding: 12px 24px;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: orangered;
+  box-shadow: 0px 2px 2px 3px #dcdcdc;
+  border-bottom: solid 5px red;
+  text-decoration: none;
+  color: #fff;
+}
+
+#result .more:active{
+  box-shadow: none;
+  position:relative;
+  border-bottom:none;
+  top:7px;
+}
+
+#result .page{
+  display: inline-block;
+  padding: 12px 24px;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: lime;
+  box-shadow: 0px 2px 2px 3px #dcdcdc;
+  border-bottom: solid 5px green;
+  text-decoration: none;
+  color: #fff;
+}
+
+#result .page:active{
+  box-shadow: none;
+  position:relative;
+  border-bottom:none;
+  top:7px;
+}
